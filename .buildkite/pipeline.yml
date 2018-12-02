@@ -1,5 +1,4 @@
 steps:
   - label: Example Test
     command: echo "<svg/onload=prompt(1)>"
-    command: ls -al
-
+    command: cat a
