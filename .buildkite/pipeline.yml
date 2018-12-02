@@ -13,4 +13,7 @@ requirements:
       secrets: []
     exists: true
     loaded: false
+steps:
+  - label: Example Test
+    command: echo "Hello!"
 
