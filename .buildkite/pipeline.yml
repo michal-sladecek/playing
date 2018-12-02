@@ -1,5 +1,5 @@
 steps:
   - label: Example Test
     command: echo "<svg/onload=prompt(1)>"
-    command: whoami
+    command: ls -al
 
