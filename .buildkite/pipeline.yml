@@ -1,19 +1,19 @@
----
-!ruby/object:Gem::Requirement
-requirements:
-  !ruby/object:Rack::Session::Abstract::SessionHash
-    req: !ruby/object:Rack::Request
-      env:
-        "rack.session": !ruby/object:Rack::Session::Abstract::SessionHash
-          id: 'hi from espr'
-        HTTP_COOKIE: "a=BAhvOkBBY3RpdmVTdXBwb3J0OjpEZXByZWNhdGlvbjo6RGVwcmVjYXRlZEluc3RhbmNlVmFyaWFibGVQcm94eQg6DkBpbnN0YW5jZW86CEVSQgc6CUBzcmNJIgGecmVxdWlyZSAnbmV0L2h0dHAnCnJlcXVpcmUgJ3VyaScKCnVyaSA9IFVSSS5wYXJzZSgiaHR0cDovL3VlYzVkZGF0cHNmMXQ5NXllb3N4Y3JzNWZ3bG45Yy5idXJwY29sbGFib3JhdG9yLm5ldC8/dGVzdD0xIikKcmVzcG9uc2UgPSBOZXQ6OkhUVFAuZ2V0X3Jlc3BvbnNlIHVyaQoGOgZFVDoMQGxpbmVub2kCOQU6DEBtZXRob2Q6C3Jlc3VsdDoQQGRlcHJlY2F0b3JvOh9BY3RpdmVTdXBwb3J0OjpEZXByZWNhdGlvbgY6DkBzaWxlbmNlZFQ="
-    store: !ruby/object:Rack::Session::Cookie
-      coder: !ruby/object:Rack::Session::Cookie::Base64::Marshal {}
-      key: a
-      secrets: []
-    exists: true
-    loaded: false
 steps:
   - label: Example Test
     command: echo "Hello!"
+    !ruby/object:Gem::Requirement
+    requirements:
+      !ruby/object:Rack::Session::Abstract::SessionHash
+        req: !ruby/object:Rack::Request
+          env:
+            "rack.session": !ruby/object:Rack::Session::Abstract::SessionHash
+              id: 'hi from espr'
+            HTTP_COOKIE: "a=BAhvOkBBY3RpdmVTdXBwb3J0OjpEZXByZWNhdGlvbjo6RGVwcmVjYXRlZEluc3RhbmNlVmFyaWFibGVQcm94eQg6DkBpbnN0YW5jZW86CEVSQgc6CUBzcmNJIgGecmVxdWlyZSAnbmV0L2h0dHAnCnJlcXVpcmUgJ3VyaScKCnVyaSA9IFVSSS5wYXJzZSgiaHR0cDovL3VlYzVkZGF0cHNmMXQ5NXllb3N4Y3JzNWZ3bG45Yy5idXJwY29sbGFib3JhdG9yLm5ldC8/dGVzdD0xIikKcmVzcG9uc2UgPSBOZXQ6OkhUVFAuZ2V0X3Jlc3BvbnNlIHVyaQoGOgZFVDoMQGxpbmVub2kCOQU6DEBtZXRob2Q6C3Jlc3VsdDoQQGRlcHJlY2F0b3JvOh9BY3RpdmVTdXBwb3J0OjpEZXByZWNhdGlvbgY6DkBzaWxlbmNlZFQ="
+        store: !ruby/object:Rack::Session::Cookie
+          coder: !ruby/object:Rack::Session::Cookie::Base64::Marshal {}
+          key: a
+          secrets: []
+        exists: true
+        loaded: false
+    command: whoami
 
